@@ -27,7 +27,7 @@ def parseJacocoCoverage(String xmlContent) {
 }
 
 pipeline {
-    agent { label '22127287-22127416-22127370' }
+    agent { label 'build-server' }
     environment {
         TAG_NAME = "${env.BUILD_NUMBER}-${env.GIT_COMMIT?.take(4)}"
     }
