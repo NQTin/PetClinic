@@ -38,7 +38,7 @@ public class VisitsServiceClient {
     public VisitsServiceClient(WebClient.Builder webClientBuilder) {
         this.webClientBuilder = webClientBuilder;
     }
-
+    public raw() {}
     public Mono<Visits> getVisitsForPets(final List<Integer> petIds) {
         return webClientBuilder.build()
             .get()
